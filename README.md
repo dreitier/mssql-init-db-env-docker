@@ -32,4 +32,4 @@ You can pass the following environment variables with `-e VARIABLE=VALUE` to the
 ## Docker
 
 ### Create build
-`docker build -t dreitier/mssql-init-db-schema:latest`
+`docker build -t dreitier/mssql-init-db-env:latest`

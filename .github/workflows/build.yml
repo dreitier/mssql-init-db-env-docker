@@ -19,6 +19,6 @@ jobs:
         name: dreitier/mssql-init-db-env
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_TOKEN }}
-        snapshot: false
+        snapshot: true
         tag_names: true
 

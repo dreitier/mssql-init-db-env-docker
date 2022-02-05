@@ -1,0 +1,24 @@
+name: Build image and deploy to Docker Hub
+
+on:
+  push:
+    tags:
+     - '*'
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Publish to Registry
+      id: publish_to_registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: dreitier/mssql-init-db-env
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_TOKEN }}
+        snapshot: false
+        tag_names: true
+

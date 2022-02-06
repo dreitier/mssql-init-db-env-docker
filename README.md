@@ -32,7 +32,7 @@ You can pass the following environment variables with `-e VARIABLE=VALUE` to the
 ## Docker
 
 ### Amazon ECS
-Please read this [short introduction](https://dreitier.com/knowledge-base/devops-in-general/platforms/amazon-web-services/create-rds-sql-server-database-on-ecs-service-startup) if you want to use the container with Amazon ECS and CloudFormation.
+Please read [this short introduction](https://dreitier.com/knowledge-base/devops-in-general/platforms/amazon-web-services/create-rds-sql-server-database-on-ecs-service-startup) if you want to use the container with Amazon ECS and CloudFormation.
 
 ### Create build
 `docker build -t dreitier/mssql-init-db-env:latest`
